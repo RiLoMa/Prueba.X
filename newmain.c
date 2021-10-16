@@ -58,14 +58,12 @@ int main(void)
          j = 0;
          while (!(j>220))
          {
-            k = 0;
-            while (!(k>7))
+            for (k = 0;!(k>7);k++)
             {
                PUERTO_COLUMNA = (uint8_t)(1U << k);
                PUERTO_FILA = E0[n][k];
                _delay_us(500);
                PUERTO_FILA = 0;
-               k =k+1;
             }
             j =j+1;
          }
