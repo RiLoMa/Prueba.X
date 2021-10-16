@@ -55,8 +55,7 @@ int main(void)
       n = 0;
       while (!(n>2))
       {
-         j = 0;
-         while (!(j>220))
+         for (j = 0; !(j>220);j =j+1)
          {
             for (k = 0;!(k>7);k++)
             {
@@ -65,7 +64,6 @@ int main(void)
                _delay_us(500);
                PUERTO_FILA = 0;
             }
-            j =j+1;
          }
          n = n+1;
       }
