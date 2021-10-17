@@ -62,7 +62,7 @@ int main(void)
             while (!(k>7))
             {
                PUERTO_COLUMNA = (uint8_t)(1U >> k);
-               PUERTO_FILA = E0[n][k];
+               PUERTO_FILA = E0[n+1][k];
                _delay_us(500);
                PUERTO_FILA = 0;
                k =k+1;
