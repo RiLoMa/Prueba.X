@@ -16,6 +16,8 @@
 #define true     0x01
 #define false    0x00 
 
+uint8_t k,j,n,salida,E0[2][7];
+
 int main(void)
 {
    DDRD = 255;
@@ -54,7 +56,7 @@ int main(void)
    {
       for (n = 0;!(n>2);n++)
       {
-         for (j = 0; !(j>220);j++)
+         for (j = 0; !(j>235);j++)
          {
             for (k = 0;!(k>7);k++)
             {
