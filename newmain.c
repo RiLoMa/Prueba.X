@@ -52,10 +52,9 @@ int main(void)
    
    while (1)
    {
-      n = 0;
-      while (!(n>2))
+      for (n = 0;!(n>2);n++)
       {
-         for (j = 0; !(j>220);j =j+1)
+         for (j = 0; !(j>220);j++)
          {
             for (k = 0;!(k>7);k++)
             {
@@ -65,7 +64,6 @@ int main(void)
                PUERTO_FILA = 0;
             }
          }
-         n = n+1;
       }
       salida = false;
       if (salida == true) break;
